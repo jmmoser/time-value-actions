@@ -2,6 +2,12 @@
 
 Let me know if you have a better name for this module!
 
+# Install
+
+```sh
+$ npm install time-value-actions
+```
+
 # Example
 
 ```javascript
