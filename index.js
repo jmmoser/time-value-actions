@@ -2,8 +2,6 @@
 
 module.exports = {
   Engine: require('./src/engine'),
-  LineAction: require('./src/lineaction'),
-  ConcurrentAction: require('./src/concurrentaction'),
   Actions: {
     Concurrent: require('./src/actions/concurrent'),
     Sequence: require('./src/actions/sequence'),
