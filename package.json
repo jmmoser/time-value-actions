@@ -1,7 +1,7 @@
 {
-  "name": "time-value-engine",
+  "name": "time-value-actions",
   "version": "1.0.0",
-  "description": "time value engine",
+  "description": "time value actions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
