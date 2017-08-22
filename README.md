@@ -1,4 +1,4 @@
-# time-value-engine
+# time-value-actions
 
 Let me know if you have a better name for this module!
 
@@ -6,14 +6,15 @@ Let me know if you have a better name for this module!
 # example
 
 ```javascript
-const TVE = require('time-value-engine');
+//test
+const TVA = require('time-value-actions');
 
-const Engine = TVE.Engine;
+const Engine = TVA.Engine;
 
-const SequenceAction = TVE.Actions.Sequence;
-const SquarewaveAction = TVE.Actions.Squarewave;
-const SinewaveAction = TVE.Actions.Sinewave;
-const TimedAction = TVE.Actions.Timed;
+const SequenceAction = TVA.Actions.Sequence;
+const SquarewaveAction = TVA.Actions.Squarewave;
+const SinewaveAction = TVA.Actions.Sinewave;
+const TimedAction = TVA.Actions.Timed;
 
 const squarewave = new SquarewaveAction(50, 20, 1 * 1000, false);
 const sinewave = new SinewaveAction(50, 20, 2 * 1000, 0);
