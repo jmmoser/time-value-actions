@@ -17,7 +17,7 @@ class Line extends EventEmitter {
     return 1;
   }
 
-  value(time) {
+  tick(time) {
     let value = this._slope * (time - this._startTime) + this._intercept;
     this.emit('value', value, time);
     return value;
