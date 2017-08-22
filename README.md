@@ -2,11 +2,9 @@
 
 Let me know if you have a better name for this module!
 
-
-# example
+# Example
 
 ```javascript
-//test
 const TVA = require('time-value-actions');
 
 const Engine = TVA.Engine;
