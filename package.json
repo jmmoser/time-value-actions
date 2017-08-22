@@ -1,6 +1,6 @@
 {
   "name": "time-value-actions",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "time value actions",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmmoser/time-value-engine.git"
+    "url": "git+https://github.com/jmmoser/time-value-actions.git"
   },
   "keywords": [
     "time",
     "value",
-    "engine"
+    "actions"
   ],
   "author": "Justin Moser",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmmoser/time-value-engine/issues"
+    "url": "https://github.com/jmmoser/time-value-actions/issues"
   },
-  "homepage": "https://github.com/jmmoser/time-value-engine#readme"
+  "homepage": "https://github.com/jmmoser/time-value-actions#readme"
 }
