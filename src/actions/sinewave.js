@@ -19,11 +19,11 @@ class Sinewave extends EventEmitter {
     return 1;
   }
 
-  tick(t) {
+  tick(time) {
     let t0 = this._startTime;
     let T = this._period;
     let to = this._offset;
-    let g = Math.sin(2 * Math.PI * ((t - t0) + to) / T);
+    let g = Math.sin(2 * Math.PI * ((time - t0) + to) / T);
     let value = this._avg + g * this._rng;
     this.emit('value', value, time);
     return value;

@@ -19,13 +19,13 @@ class Squarewave extends EventEmitter {
     return 1;
   }
 
-  tick(t) {
+  tick(time) {
     let t0 = this._startTime;
     let h = this._high;
     let l = this._low;
     let T = this._period;
     let to = this._offset;
-    let g = Math.sin(((t - t0 + to) / T) * Math.PI);
+    let g = Math.sin(((time - t0 + to) / T) * Math.PI);
     let s = g > 0 ? 1 : -1;
     let value = (h + l + (h - l) * s) / 2;
     this.emit('value', value, time);
