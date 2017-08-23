@@ -1,6 +1,6 @@
 'use strict';
 
-const MINIMUM_MILLESECONDS = 50;
+const MINIMUM_MILLESECONDS = 10;
 // const MINIMUM_MULTIPLIER = 1.01;
 
 const timerFunc = Date.now;
@@ -15,7 +15,7 @@ class Engine {
   setOptions(opts) {
     opts = opts || {};
 
-    this._milleseconds = opts.milliseconds || 1000;
+    this._milleseconds = opts.milliseconds || 100;
     // this._multiplier = opts._multiplier || 1.1;
 
     if (this._milliseconds < MINIMUM_MILLESECONDS) {
