@@ -1,6 +1,6 @@
 {
   "name": "time-value-actions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "time value actions",
   "main": "index.js",
   "scripts": {
