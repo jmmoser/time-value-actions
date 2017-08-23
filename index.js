@@ -5,7 +5,7 @@ module.exports = {
   Actions: {
     Custom: require('./src/actions/custom'),
     Sequence: require('./src/actions/sequence'),
-    Timed: require('./src/actions/timed')
+    Timed: require('./src/actions/timed'),
     Filter: require('./src/actions/filter'),
     Line: require('./src/actions/line'),
     Sinewave: require('./src/actions/sinewave'),
