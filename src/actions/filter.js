@@ -23,7 +23,7 @@ class FilterAction extends EventEmitter {
   tick(time) {
     let value = this._action.tick(time);
     if (value != null) {
-      if (this._value === null || Math.abs(value - this._value) > this._filter) {
+      if (this._value == null || Math.abs(value - this._value) > this._filter) {
         this._value = value;
         this.emit('value', value, time);
         return value;

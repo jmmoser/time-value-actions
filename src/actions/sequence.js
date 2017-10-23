@@ -29,7 +29,7 @@ class SequenceAction extends EventEmitter {
 
     let value = this._actions[this._index].tick(time);
 
-    if (value) {
+    if (value != null) {
       this.emit('value', value, time);
       return value;
     }

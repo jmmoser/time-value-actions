@@ -11,18 +11,18 @@ class TimedAction extends EventEmitter {
 
   activate(time) {
     this._startTime = time;
-    if (this._action) this._action.activate(time);
+    if (this._action != null) this._action.activate(time);
   }
 
   active(time) {
-    if (this._action && !this._action.active(time)) return 0;
+    if (this._action != null && !this._action.active(time)) return 0;
     return (time - this._startTime) < this._milliseconds;
   }
 
   tick(time) {
     if (this._action) {
       let value = this._action.tick(time);
-      if (value) {
+      if (value != null) {
         this.emit('value', value, time);
         return value;
       }
